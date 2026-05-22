@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请假信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        /* 修正后的顶部栏：和截图完全一致 */
+        .header {
+            background-color: #0066ff;
+            color: white;
+            text-align: center;
+            padding: 28px 0; /* 调整上下内边距，匹配原图高度 */
+            font-size: 22px; /* 字体大小和原图对齐 */
+            font-weight: bold;
+            position: relative;
+        }
+        /* 左上角关闭按钮，和截图位置一致 */
+        .close-btn {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            color: white;
+            font-size: 26px;
+            text-decoration: none;
+        }
+        /* 右上角三个点，还原截图效果 */
+        .more-btn {
+            position: absolute;
+            top: 18px;
+            right: 16px;
+            color: white;
+            font-size: 24px;
+        }
+        .card {
+            background-color: white;
+            margin: 15px;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .card-title::before {
+            content: "";
+            width: 5px;
+            height: 22px;
+            background-color: #0066ff;
+            margin-right: 10px;
+        }
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 18px;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .label {
+            color: #333;
+        }
+        .value {
+            color: #333;
+            text-align: right;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部栏：还原了关闭按钮、标题和右上角的三个点 -->
+    <div class="header">
+        <a href=" " class="close-btn">×</a >
+        请假信息
+        <span class="more-btn">•••</span>
+    </div>
+
+    <div class="card">
+        <div class="card-title">学生信息</div>
+        <div class="info-item">
+            <span class="label">姓名:</span>
+            <span class="value">李嘉豪</span>
+        </div>
+        <div class="info-item">
+            <span class="label">学号:</span>
+            <span class="value">21052230119</span>
+        </div>
+        <div class="info-item">
+            <span class="label">学院:</span>
+            <span class="value">信息工程系</span>
+        </div>
+        <div class="info-item">
+            <span class="label">专业:</span>
+            <span class="value">动漫制作技术（中外合作办学）</span>
+        </div>
+        <div class="info-item">
+            <span class="label">专业:</span>
+            <span class="value">动漫2501</span>
+        </div>
+        <div class="info-item">
+            <span class="label">性别:</span>
+            <span class="value">男</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">请假信息</div>
+        <div class="info-item">
+            <span class="label">请假类别</span>
+            <span class="value"></span>
+        </div>
+        <div class="info-item">
+            <span class="label">请假类型:</span>
+            <span class="value">3天以内</span>
+        </div>
+        <div class="info-item">
+            <span class="label">请假开始时间:</span>
+            <span class="value">2026-06-17 08:00</span>
+        </div>
+        <div class="info-item">
+            <span class="label">请假结束时间:</span>
+            <span class="value">2026-06-18 17:00</span>
+        </div>
+        <div class="info-item">
+            <span class="label">家长是否知晓:</span>
+            <span class="value">是</span>
+        </div>
+        <div class="info-item">
+            <span class="label">家长电话:</span>
+            <span class="value">15766218356</span>
+        </div>
+        <div class="info-item">
+            <span class="label">联系电话:</span>
+            <span class="value">13026323198</span>
+        </div>
+        <div class="info-item">
+            <span class="label">辅导员:</span>
+            <span class="value">郭聪聪</span>
+        </div>
+        <div class="info-item">
+            <span class="label">去向:</span>
+            <span class="value"></span>
+        </div>
+        <div class="info-item">
+            <span class="label">申请理由:</span>
+            <span class="value">输液</span>
+        </div>
+        <div class="info-item">
+            <span class="label">销假状态:</span>
+            <span class="value"></span>
+        </div>
+        <div class="info-item">
+            <span class="label">是否离校:</span>
+            <span class="value">是</span>
+        </div>
+    </div>
+</body>
+</html>
